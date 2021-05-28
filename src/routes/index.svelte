@@ -1,1 +1,8 @@
-<h1>Welcome to SvelteKit</h1>
+<script>
+  import { goto } from "$app/navigation";
+  import { browser } from "$app/env";
+
+  if (browser) {
+    goto("/0");
+  }
+</script>
